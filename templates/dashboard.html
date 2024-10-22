@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Documents</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h2>Your Documents</h2>
+    <ul>
+        {% for document in documents %}
+            <li>{{ document.title }} - <a href="/static/{{ document.document_hash }}" target="_blank">View</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
