@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import os
 
 app = Flask(__name__)
-app.secret_key = '731d8fb1e51c0a88a3340c7a4bb4a404'
+app.secret_key = 'apply your own key from key generator in MISC folder'
 
 # Configuring the SQLite database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///document_wallet.db'
