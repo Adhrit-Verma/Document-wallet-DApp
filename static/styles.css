@@ -8,6 +8,10 @@ h2 {
     color: #333;
 }
 
+h1 {
+    color: #333;
+}
+
 form {
     margin-top: 20px;
 }
@@ -31,4 +35,33 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li {
+    margin: 5px 0;
 }

@@ -5,10 +5,26 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <h2>Your Documents</h2>
+    <h2>Welcome, {{ session['username'] }}!</h2>
+
+    <nav>
+        <ul>
+            <li><a href="/upload">Upload Document</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <h3>Your Documents</h3>
     <ul>
         {% for document in documents %}
-            <li>{{ document.title }} - <a href="/static/{{ document.document_hash }}" target="_blank">View</a></li>
+            <li>
+                {{ document.title }} - 
+                <a href="/static/{{ document.document_hash }}" target="_blank">View</a> | 
+                <a href="/download/{{ document.id }}">Download</a> | 
+                <a href="/delete/{{ document.id }}" onclick="return confirm('Are you sure you want to delete this document?');">Delete</a>
+            </li>
+        {% else %}
+            <li>No documents uploaded yet.</li>
         {% endfor %}
     </ul>
 </body>
