@@ -1,6 +1,3 @@
-Here's the updated `README.md` file for your Document Wallet DApp project, with placeholders replaced and additional details you might want to include. Feel free to adjust any specific descriptions as needed:
-
-```markdown
 # Document Wallet DApp
 
 ## Overview
